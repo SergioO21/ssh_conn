@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Setup my ssh alias.
+
+my_server="\n\
+Host my_server\n\
+    HostName 35.196.199.248\n\
+    User ubuntu\n\
+    IdentityFile ~/.ssh/holberton\n\
+    PasswordAuthentication no"
+
+sudo echo -e "$my_server" >> /etc/ssh/ssh_config
