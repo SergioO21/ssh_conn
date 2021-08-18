@@ -1,24 +1,28 @@
 ## 1. Difference between sites-available and sites-enabled NGINX directories.
 
-> The `sites-available` folder is for storing _all_ of your vhost configurations, whether or not they're currently enabled
+> The `sites-available` folder is for storing _all_ of your vhost configurations, whether or not they're currently enabled.
 > 
-> The `sites-available` folder is for storing _all_ of your vhost configurations, whether or not they're currently enabled
+> The `sites-enabled` folder contains symlinks to files in the sites-available folder. This allows you to selectively disable vhosts by removing the symlink.
 
+<br>
 
 ## 2. Why NGINX instead of other Web servers?
 
 > Nginx can perform a much better job at handling the static files from a specific directory. Also, the upstream server processes don't get blocked because of the heavy, multiple static content requests as Nginx can process them concurrently. This significantly improves the overall performance of backend servers.
 
+<br>
 
 ## 3. What is the protocol behind the main internet ports?
 
-> TCP/IP
+> TCP/IP.
 
+<br>
 
 ## 4. Could we use any port to connect anything?
 
 > Yes, regardless of whether some are standardized, they are still used to connect in one way or another to the server.
 
+<br>
 
 ## 5. Talking about Docker, Is a container port the same as a server port? argue your answer.
 
