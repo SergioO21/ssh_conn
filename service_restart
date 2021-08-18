@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Restart some service
+
+if [ $# != 1 ]
+then
+    echo "USAGE: ./service_restart SERVICE"
+else
+    sudo service "$1" restart
+fi
