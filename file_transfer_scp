@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# File transfer SCP
+
+if [ $# != 4 ]
+then
+    echo "USAGE: ./file_transfer_scp LOCAL_FILE USERNAME IP SSH_KEY_PATH"
+else
+    scp -o StrictHostKeyChecking=no -i "$4" "$1" "$2"@"$3":~/
+fi
