@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # Setup my ssh alias.
+# ...
+# After executing this script, you will only have to type <ssh [YOUR_ALIAS]>
+# and you will be able to connect to your server without writing anything else.
 
 if [ $# != 4 ]
 then
